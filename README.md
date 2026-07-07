@@ -32,11 +32,11 @@ The dashboard automatically updates the displayed weather information based on t
 # Cities Included
 
 - Bangalore
-- Delhi
+- Gurgaon
 - Mumbai
-- Chennai
+- Lucknow
 - Hyderabad
-- Kolkata
+- Noida
 
 ---
 
@@ -186,19 +186,16 @@ Power BI Dashboard
 
 # Dashboard Preview
 
-(Add screenshots inside the Images folder)
-
 Example:
 
 ```
-images/dashboard.png
+images/Theme 1.png
 ```
 
 ---
 
 # Future Improvements
 
-- Live automatic refresh
 - Hourly Forecast
 - Weather Alerts
 - AQI Prediction
