@@ -188,10 +188,8 @@ Power BI Dashboard
 
 Example:
 
-```
-[images/Theme 1.png
-](https://github.com/yogita-aggarwal/PowerBI-Weather-Forecast-Dashboard/blob/main/Images/Theme%201.png)```
 
+[Images/Theme 1.png]
 ---
 
 # Future Improvements
