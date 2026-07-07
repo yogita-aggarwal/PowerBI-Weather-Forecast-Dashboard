@@ -1,35 +1,34 @@
-# 🌦️ Weather Forecast Dashboard (Power BI)
+# 🌦️ Live Weather Forecast Dashboard | Power BI
 
-## 📌 Project Overview
+## 📖 About the Project
 
-This project is an interactive Weather Forecast Dashboard developed in **Microsoft Power BI** using live weather data fetched from **WeatherAPI.com**.
+This project is an interactive weather analytics dashboard built in **Microsoft Power BI** by integrating live weather data from **WeatherAPI.com**. The goal was to create a dynamic dashboard that allows users to view real-time weather conditions and a three-day forecast for multiple cities through a clean and interactive interface.
 
-The dashboard displays current weather conditions and a 3-day weather forecast for multiple cities. It uses JSON responses from the WeatherAPI service, transforms the data using Power Query, and visualizes it through interactive Power BI reports.
+Instead of using static datasets, the dashboard fetches weather information from the WeatherAPI service in **JSON format**. The JSON data is transformed using **Power Query**, modeled within Power BI, and enhanced with **DAX measures** to provide meaningful insights and a responsive user experience.
 
-The dashboard automatically updates the displayed weather information based on the selected city.
+The dashboard updates automatically based on the selected city, making it easy to compare weather conditions across locations.
 
 ---
 
-# Features
+## 🚀 Key Features
 
-- 🌍 Weather information for **6 different cities**
-- 🌡️ Current Temperature
-- 📅 Current Date
-- 🏙️ City Selection
+- 🌍 Weather information for six Indian cities
+- 📍 Interactive city selection
+- 🌡️ Current temperature
+- 📅 Current date and latest weather update
 - 💧 Humidity
-- 🌬️ Wind Speed
-- ☁️ Weather Condition
-- 🌅 Sunrise
-- 🌇 Sunset
-- 🌧️ Chance of Rain
-- 🌫️ Air Quality Information (PM10)
-- 📈 Three-Day Weather Forecast
-- Interactive Power BI visuals
-- Dynamic filtering based on selected city
+- 🌬️ Wind speed
+- ☁️ Weather condition with icons
+- 🌅 Sunrise & Sunset timings
+- 🌧️ Chance of rain
+- 🌫️ Air Quality (PM10)
+- 📊 Three-day weather forecast
+- 🎨 Dynamic AQI color indicators using DAX
+- ⚡ Interactive Power BI visuals and slicers
 
 ---
 
-# Cities Included
+## 🏙️ Cities Covered
 
 - Bangalore
 - Gurgaon
@@ -40,15 +39,15 @@ The dashboard automatically updates the displayed weather information based on t
 
 ---
 
-# Data Source
+## 🌐 Data Source
 
-Weather data is retrieved from:
+All weather information is retrieved from the **WeatherAPI** service.
 
-https://www.weatherapi.com/
+**Website:** https://www.weatherapi.com/
 
-The API returns weather information in **JSON format**, which is consumed directly in Power BI using Power Query.
+The dashboard consumes weather data in **JSON format** using the Forecast API endpoint.
 
-Example endpoint:
+Example API:
 
 ```
 https://api.weatherapi.com/v1/forecast.json
@@ -56,172 +55,146 @@ https://api.weatherapi.com/v1/forecast.json
 
 ---
 
-# Technologies Used
+## 🛠️ Tech Stack
 
 - Microsoft Power BI
 - Power Query (M Language)
-- JSON
+- DAX (Data Analysis Expressions)
 - WeatherAPI
-- DAX
+- JSON
 - Data Modeling
 
 ---
 
-# Dashboard Components
+## 📊 Dashboard Overview
+
+The dashboard consists of multiple sections designed to provide a complete weather overview.
 
 ### Current Weather
 
-Displays:
+Displays the latest weather details for the selected city, including:
 
 - Current Temperature
 - Weather Condition
 - Feels Like Temperature
 - Humidity
 - Wind Speed
-- Air Quality
+- Air Quality (PM10)
 - Last Updated Time
 
----
+### Three-Day Forecast
 
-### Forecast
-
-Displays:
+Provides weather predictions for the next three days, including:
 
 - Maximum Temperature
 - Minimum Temperature
 - Average Temperature
 - Chance of Rain
-- Daily Weather Condition
-- Weather Icons
-- Three-Day Forecast
-
----
+- Weather Condition
+- Forecast Icons
 
 ### Air Quality
 
-Shows:
-
-- PM10
-- AQI Status
-- Dynamic Color Indicators
-
----
+Shows PM10 air quality values with dynamic color coding for better visualization.
 
 ### Dynamic Date
 
-The dashboard automatically displays the **current date** corresponding to the selected weather data.
+Automatically displays the current weather date based on the selected city's latest API response.
 
 ---
 
-# Data Processing
+## 🔄 Project Workflow
 
-The project follows the following workflow:
-
-1. Connect to WeatherAPI.
-2. Fetch weather data in JSON format.
-3. Parse nested JSON objects.
-4. Transform data using Power Query.
-5. Create relationships between forecast and current weather data.
-6. Build DAX measures.
-7. Design interactive visuals.
-8. Publish dashboard.
+```
+WeatherAPI
+      │
+      ▼
+ JSON Response
+      │
+      ▼
+ Power Query
+(Data Cleaning & Transformation)
+      │
+      ▼
+ Data Model
+      │
+      ▼
+ DAX Measures
+      │
+      ▼
+ Interactive Power BI Dashboard
+```
 
 ---
 
-# Power Query Transformations
+## 🔧 Data Preparation
 
-The JSON response was transformed by:
+The raw JSON response was transformed using Power Query by:
 
-- Expanding nested records
-- Extracting forecast data
-- Extracting current weather
-- Extracting air quality
-- Converting data types
-- Creating custom columns
+- Parsing nested JSON records
+- Extracting current weather information
+- Expanding forecast data
+- Extracting air quality metrics
+- Changing data types
 - Removing unnecessary fields
+- Creating calculated columns for reporting
 
 ---
 
-# DAX Measures
+## 📈 DAX Measures Used
 
-Some custom DAX measures include:
+Some of the custom measures created in this project include:
 
 - Current Date
-- AQI Color
 - PM10 Status
+- AQI Color Indicator
 - Temperature Formatting
 - Forecast Labels
 
 ---
 
-# Project Workflow
+## 📷 Dashboard Preview
 
-WeatherAPI
+> Add screenshots of your dashboard inside the **Images** folder and update the image path below.
 
-↓
-
-JSON Response
-
-↓
-
-Power Query
-
-↓
-
-Data Cleaning
-
-↓
-
-Data Model
-
-↓
-
-DAX Measures
-
-↓
-
-Power BI Dashboard
+```
+Images/Theme 1.png
+```
 
 ---
 
-# Dashboard Preview
+## 🎯 What I Learned
 
-Example:
+This project helped me strengthen my understanding of:
 
-
-[Images/Theme 1.png]
----
-
-# Future Improvements
-
-- Hourly Forecast
-- Weather Alerts
-- AQI Prediction
-- Additional Cities
-- Historical Weather Analysis
-- Mobile Optimized Dashboard
-
----
-
-# Learning Outcomes
-
-Through this project I learned:
-
-- API Integration in Power BI
+- Connecting Power BI with REST APIs
 - Working with JSON data
 - Power Query transformations
+- Data modeling
 - DAX calculations
-- Dashboard Design
-- Dynamic Filtering
-- Weather Data Visualization
-- Air Quality Visualization
+- Interactive dashboard design
+- Real-time data visualization
+- API-based reporting solutions
 
 ---
 
-# Author
+## 🔮 Future Enhancements
+
+Some improvements planned for future versions include:
+
+- Hourly weather forecast
+- Weather alerts
+- Additional cities
+- Historical weather analysis
+- Automatic scheduled refresh
+- Mobile-friendly dashboard layout
+
+---
+
+## 👩‍💻 Author
 
 **Yogita Aggarwal**
 
-MCA (Artificial Intelligence & Machine Learning)
+**MCA (Artificial Intelligence & Machine Learning)**
 
-Power BI | SQL | Python | Data Analytics
+**Skills:** Power BI • SQL • Python • Data Analytics • Data Visualization
